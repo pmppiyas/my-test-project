@@ -1,6 +1,6 @@
 import Button from "../lib/button";
 import Image from "next/image";
-import assets from "../Assets/assets";
+import { assets } from "../Assets/assets";
 
 function Banner() {
   return (

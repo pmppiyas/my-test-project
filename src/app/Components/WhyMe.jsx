@@ -18,7 +18,7 @@ function WhyMe() {
         </p>
       </div>
       {/* Why We */}
-      <div className="flex flex-col md:flex-row *:flex-1">
+      <div className="flex flex-col md:flex-row *:flex-1 gap-8 lg:gap-12">
         <div className="space-y-2">
           <div className="border-2 w-max border-primary border-dashed p-1">
             <svg
