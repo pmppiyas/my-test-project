@@ -6,6 +6,7 @@
   --font-kumbh-sans: "Kumbh Sans", sans-serif;
   --foreground: #171717;
   --primary: rgb(32, 173, 150);
+  --secondary-primary: rgb(30, 150, 150);
 }
 
 @theme inline {
@@ -13,7 +14,7 @@
   --color-foreground: var(--foreground);
   --color-secondary: var(--secondary);
   --color-primary: var(--primary);
-  --color-primary-hover: rgb(32, 173, 150);
+  --color-primary-secondary: var(--secondary-primary);
   --font-cumtom: var(--font-kumbh-sans);
 }
 

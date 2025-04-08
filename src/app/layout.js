@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${kumbhSans.variable}  antialiased font-cumtom`}>
+      <body className={`${kumbhSans.variable}   antialiased max-w-7xl mx-auto`}>
         <Navbar></Navbar>
         <main>{children}</main>
       </body>
