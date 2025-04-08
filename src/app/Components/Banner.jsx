@@ -1,12 +1,10 @@
 import Button from "../lib/button";
 import Image from "next/image";
 import assets from "../Assets/assets";
-import { Goal } from "lucide-react";
-import CountUp from "react-countup";
 
 function Banner() {
   return (
-    <div className="font-cumtom md:min-h-[calc(100vh-72px)] bg-secondary text-foreground flex flex-col md:flex-row justify-between items-center gap-8 p-4 md:p-10 relative">
+    <div className="font-cumtom md:min-h-[calc(100vh-72px)] bg-secondary dark:bg-background text-foreground flex flex-col md:flex-row justify-between items-center gap-8 p-4 md:p-10 relative">
       {/* Vector Image */}
       <div className="block absolute top-0 left-0 ">
         <Image
@@ -18,7 +16,7 @@ function Banner() {
       </div>
       {/* Left Section */}
       <div className="text-left space-y-4 md:w-1/2">
-        <p className="text-md opacity-50">
+        <p className="text-md opacity-50 ">
           Proven strategies backed by science for success.
         </p>
         <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
@@ -55,6 +53,7 @@ function Banner() {
               <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" />
             </svg>
           </div>
+
           <div className=" flex flex-col text-center">
             <h3 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 animate-pulse">
               100%
