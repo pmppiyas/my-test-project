@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function SessionBook() {
   return (
-    <div className="font-custom bg-background md:px-10 py-10 flex flex-col">
-      <div className="bg-secondary dark:bg-background p-6 md:p-8 rounded-md shadow-lg flex flex-col lg:flex-row gap-8 lg:gap-16 w-full md:w-3/4 mx-auto">
+    <div className="font-custom bg-background md:px-10 py-10 flex flex-col mb-4">
+      <div className="bg-secondary dark:bg-background p-6 md:p-10 rounded-md shadow-lg flex flex-col lg:flex-row gap-8 lg:gap-16 w-full md:w-7/8 mx-auto">
         {/* Left side */}
         <div className="flex flex-col space-y-6 lg:w-1/2 justify-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium">

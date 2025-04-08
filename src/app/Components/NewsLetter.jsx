@@ -12,7 +12,7 @@ function NewsLetter() {
   };
 
   return (
-    <div className="w-full  py-12 px-6 md:px-8 bg-secondary rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6">
+    <div className="w-full  py-8 px-6  bg-secondary rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6">
       <div className="flex-1 flex flex-col items-center justify-center text-center space-y-2 mb-6">
         <h3 className="text-2xl font-medium">
           Get notified when I publish new articles

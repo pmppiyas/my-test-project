@@ -16,6 +16,7 @@ export default function Home() {
       <DontMiss></DontMiss>
       <SessionBook></SessionBook>
       <NewsLetter></NewsLetter>
+     
     </div>
   );
 }
