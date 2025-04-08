@@ -35,7 +35,7 @@ function Blog() {
           return (
             <div
               key={idx}
-              className="border-2 border-foreground hover:border-primary transition-all duration-300 rounded-lg "
+              className="border-1 border-foreground hover:border-primary transition-all duration-300 rounded-lg group hover:shadow-md"
             >
               <Image
                 src={blog.image}
@@ -46,7 +46,9 @@ function Blog() {
                 className="rounded-t-md"
               />
               <div className="p-6 space-y-4">
-                <h3>{blog.title}</h3>
+                <h3 className="text-xl font-medium group-hover:underline group-hover:text-primary transition-all duration-300 cursor-pointer">
+                  {blog.title}
+                </h3>
                 <p>{blog.description}</p>
               </div>
             </div>

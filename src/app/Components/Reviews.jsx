@@ -25,16 +25,16 @@ function Reviews() {
     },
   ];
   return (
-    <div className="font-cumtom bg-secondary px-4 md:px-10 py-10 lg:py-20 space-y-10 lg:space-y-20">
+    <div className="font-cumtom bg-secondary dark:bg-background px-4 md:px-10 py-10 lg:py-20 space-y-10 lg:space-y-20">
       <h2 className="text-4xl md:text-5xl font-semibold  leading-tight lg:w-1/2">
         Hear out what my clients say about me.
       </h2>
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
+      <div className="flex flex-col lg:flex-row gap-10 ">
         {reviews.map((review, idx) => {
           return (
             <div
               key={idx}
-              className="flex flex-col  gap-2 mb-10 bg-background p-5 rounded-lg shadow-lg"
+              className="flex flex-col items-center justify-center  gap-2 mb-10 bg-background p-5 rounded-lg shadow-lg border-1"
             >
               <p className="text-center">"{review.reviews}"</p>
 
@@ -44,8 +44,8 @@ function Reviews() {
                 height={100}
                 className="rounded-md  "
               ></Image>
-              <h3 className="text-xl font-medium pl-6 mt-2">{review.name}</h3>
-              <div className="flex text-xl pl-6">
+              <h3 className="text-xl font-medium ">{review.name}</h3>
+              <div className="flex text-xl">
                 {[...Array(5)].map((_, starIdx) => (
                   <span
                     key={starIdx}
