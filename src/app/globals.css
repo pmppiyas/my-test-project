@@ -2,14 +2,19 @@
 
 :root {
   --background: #ffffff;
+  --secondary: rgb(250, 248, 246);
+  --font-kumbh-sans: "Kumbh Sans", sans-serif;
   --foreground: #171717;
+  --primary: rgb(32, 173, 150);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-secondary: var(--secondary);
+  --color-primary: var(--primary);
+  --color-primary-hover: rgb(32, 173, 150);
+  --font-cumtom: var(--font-kumbh-sans);
 }
 
 @media (prefers-color-scheme: dark) {
