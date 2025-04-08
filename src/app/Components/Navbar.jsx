@@ -1,6 +1,7 @@
 "use client";
 import { MessageSquare } from "lucide-react";
 import React, { useState } from "react";
+import Button from "../lib/button";
 
 function Navbar() {
   const navLinks = [
@@ -18,15 +19,15 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="font-custom">
+    <div className="font-custom px-2">
       {/* Navbar Container */}
-      <div className="flex items-center justify-between px-2 py-4 bg-foreground text-background shadow-md">
+      <div className="flex items-center justify-between  py-4 bg-background text-foreground shadow-md">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 group">
           <span className="bg-primary rounded-full p-2">
             <MessageSquare
               strokeWidth={3}
-              className="w-6 h-6 text-foreground"
+              className="w-6 h-6 text-background group-hover:text-foreground transition duration-200"
             />
           </span>
           <span className="text-xl font-bold">Happy Coaching</span>
@@ -48,7 +49,7 @@ function Navbar() {
               <a
                 key={link.name}
                 href={link.link}
-                className="text-background hover:text-primary transition duration-200"
+                className="text-foreground hover:text-primary transition duration-200"
               >
                 {link.name}
               </a>
@@ -56,7 +57,7 @@ function Navbar() {
           </nav>
 
           {/* Button (for large screen) */}
-          <button className="bg-primary  px-4 py-2 rounded-md text-foreground hover:bg-primary-secondary  transition duration-300">
+          <button className="bg-primary  px-4 py-2 rounded-md text-background hover:bg-primary-secondary  transition duration-300">
             Get your free guide now
           </button>
         </div>
@@ -64,13 +65,13 @@ function Navbar() {
 
       {/* Mobile Menu (Visible only on mobile) */}
       {isOpen && (
-        <div className="md:hidden bg-foreground shadow-md p-4">
-          <nav className="flex flex-col items-center gap-4  p-4 text-background">
+        <div className="md:hidden bg-background shadow-md p-4">
+          <nav className="flex flex-col items-center gap-4  p-4 text-foreground">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.link}
-                className="hover:text-primary hover:b- transition duration-200"
+                className="hover:text-primary  transition duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -79,9 +80,7 @@ function Navbar() {
           </nav>
           {/* Button */}
           <div className="flex justify-center mt-4">
-            <button className="bg-primary  px-4 py-2 rounded-md hover:bg-primary-secondary  transition duration-300">
-              Get your free guide now
-            </button>
+            <Button></Button>
           </div>
         </div>
       )}
