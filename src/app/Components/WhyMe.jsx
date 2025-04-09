@@ -1,8 +1,8 @@
 function WhyMe() {
   return (
-    <div className="font-cumtom bg-background px-4 md:px-10 py-10 lg:py-20 space-y-10 lg:space-y-20">
+    <div className="font-cumtom bg-background px-4 md:px-10  lg:py-20 space-y-10 lg:space-y-20 min-h-[730px] flex items-center justify-center flex-col ">
       <div className="flex flex-col md:flex-row  gap-8 ">
-        <h2 className="text-4xl md:text-5xl font-semibold flex-1 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold flex-1 leading-14">
           I can help you in these particular areas.
         </h2>
         <p className=" flex-1">
@@ -19,7 +19,7 @@ function WhyMe() {
       </div>
       {/* Why We */}
       <div className="flex flex-col md:flex-row *:flex-1 gap-8 lg:gap-12">
-        <div className="space-y-2">
+        <div className="space-y-4 py-6 md:py-10">
           <div className="border-2 w-max border-primary border-dashed p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function WhyMe() {
             veniam.
           </p>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-4 py-6 md:py-10">
           <div className="border-2 w-max border-primary border-dashed p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ function WhyMe() {
             veniam.
           </p>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-4 py-6 md:py-10">
           <div className="border-2 w-max border-primary border-dashed p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -22,7 +22,7 @@ function Banner() {
         <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
           Live life at the full potential
         </h1>
-        <h6>
+        <h6 className="opacity-80">
           I help people to discover their true potential and live a fulfilling
           life...Discover the simple 3 steps that I discovered to hack
           productivity. It just works and it is begin using backed by science.
@@ -34,8 +34,8 @@ function Banner() {
       {/* Right Section */}
       <div className="w-full md:w-1/2 h-full flex justify-end items-center relative">
         {/* Rating */}
-        <div className="bg-background shadow-xl flex items-center gap-2 p-2  absolute top-0 md:-top-8 left-0 rounded-sm">
-          <div className="border-2 border-primary border-dashed p-2">
+        <div className="bg-background shadow-xl flex items-center gap-2 p-6  absolute top-0 md:-top-8 left-0 rounded-sm">
+          <div className="border-2 border-primary border-dashed p-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -55,7 +55,7 @@ function Banner() {
           </div>
 
           <div className=" flex flex-col text-center">
-            <h3 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 animate-pulse">
+            <h3 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 animate-pulse">
               100%
             </h3>
 
@@ -65,7 +65,8 @@ function Banner() {
         <Image
           src={assets.banner1}
           alt="Banner"
-          className=" h-[500px] w-full lg:w-3/4 rounded-lg shadow-lg"
+          height={600}
+          className="w-full lg:w-5/6  h-[600px]  rounded-lg shadow-lg"
           priority
         />
       </div>

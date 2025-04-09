@@ -8,7 +8,7 @@ import WhyMe from "./Components/WhyMe";
 
 export default function Home() {
   return (
-    <div>
+    <div className="antialiased">
       <Banner></Banner>
       <WhyMe></WhyMe>
       <Reviews></Reviews>
@@ -16,7 +16,6 @@ export default function Home() {
       <DontMiss></DontMiss>
       <SessionBook></SessionBook>
       <NewsLetter></NewsLetter>
-     
     </div>
   );
 }

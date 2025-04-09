@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../lib/button";
 
 function Blog() {
   const blogs = [
@@ -25,7 +26,7 @@ function Blog() {
   ];
   return (
     <div className="font-cumtom bg-background px-4 md:px-10 py-10 lg:py-20 space-y-10 lg:space-y-16">
-      <h2 className="text-4xl md:text-5xl font-semibold  leading-tight text-center">
+      <h2 className="text-4xl md:text-5xl font-extrabold flex-1 leading-14">
         Stay Motivated, read the
         <br></br>
         weekly blog articles.
@@ -46,14 +47,18 @@ function Blog() {
                 className="rounded-t-md"
               />
               <div className="p-6 space-y-4">
-                <h3 className="text-xl font-medium group-hover:underline group-hover:text-primary transition-all duration-300 cursor-pointer">
+                <h3 className="text-2xl font-bold group-hover:underline group-hover:text-primary transition-all duration-300 cursor-pointer">
                   {blog.title}
                 </h3>
-                <p>{blog.description}</p>
+                <p className="text-[16px]">{blog.description}</p>
               </div>
             </div>
           );
         })}
+      </div>
+      <div className="flex justify-center">
+        {" "}
+        <Button></Button>
       </div>
     </div>
   );
